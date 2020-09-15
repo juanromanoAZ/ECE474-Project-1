@@ -1,0 +1,160 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 3764
+License: Customer
+
+Current time: 	Mon Sep 14 21:21:18 MST 2020
+Time zone: 	Mountain Standard Time (America/Phoenix)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 2560x1440
+Screen resolution (DPI): 100
+Available screens: 3
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	E:/Vivado/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	E:/Vivado/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Gaming PC
+User home directory: C:/Users/Gaming PC
+User working directory: C:/Users/Gaming PC/Desktop/Git Hub/ECE474-Project-1/project_1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: E:/Vivado/Vivado
+HDI_APPROOT: E:/Vivado/Vivado/2020.1
+RDI_DATADIR: E:/Vivado/Vivado/2020.1/data
+RDI_BINDIR: E:/Vivado/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/Gaming PC/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/Gaming PC/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/Gaming PC/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	E:/Vivado/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Gaming PC/Desktop/Git Hub/ECE474-Project-1/project_1/vivado.log
+Vivado journal file location: 	C:/Users/Gaming PC/Desktop/Git Hub/ECE474-Project-1/project_1/vivado.jou
+Engine tmp dir: 	C:/Users/Gaming PC/Desktop/Git Hub/ECE474-Project-1/project_1/.Xil/Vivado-3764-DESKTOP-MFS4CR1
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/Vivado/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: E:/Vivado/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: E:/Vivado/Vivado/2020.1
+XILINX_VIVADO: E:/Vivado/Vivado/2020.1
+XILINX_VIVADO_HLS: E:/Vivado/Vivado/2020.1
+
+
+GUI allocated memory:	242 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,017 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Gaming PC\Desktop\Git Hub\ECE474-Project-1\project_1\project_1.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 82 MB (+83777kb) [00:00:08]
+// [Engine Memory]: 1,017 MB (+915249kb) [00:00:08]
+// [GUI Memory]: 97 MB (+11197kb) [00:00:08]
+// [GUI Memory]: 119 MB (+18145kb) [00:00:09]
+// WARNING: HEventQueue.dispatchEvent() is taking  2463 ms.
+// Tcl Message: open_project {C:/Users/Gaming PC/Desktop/Git Hub/ECE474-Project-1/project_1/project_1.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2020.1/data/ip'. 
+// Project name: project_1; location: C:/Users/Gaming PC/Desktop/Git Hub/ECE474-Project-1/project_1; part: xc7a100tcsg324-3
+dismissDialog("Open Project"); // bz (cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,017 MB. GUI used memory: 62 MB. Current time: 9/14/20, 9:21:19 PM MST
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 70 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADD (ADD.v)]", 2, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADD (ADD.v)]", 2, false, false, false, false, false, true); // B (F, cs) - Double Click
+// [GUI Memory]: 135 MB (+9966kb) [00:01:22]
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL (aI, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 12, true, false, false, false, true, false); // B (F, cs) - Popup Trigger - Node
+// Elapsed time: 109 seconds
+selectCodeEditor("ADD.v", 530, 708); // bP (w, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 12, true, false, false, false, true, false); // B (F, cs) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cs)
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Refresh Hierarchy"); // ai (ao, cs)
+// Elapsed time: 16 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // aL (aI, cs)
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aL (aI, cs)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aL (aI, cs)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL (aI, cs)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL (aI, cs)
+// Elapsed time: 70 seconds
+selectCodeEditor("ADD.v", 319, 477); // bP (w, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, COMP (COMP.v)]", 3, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, COMP (COMP.v)]", 3, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("COMP.v", 144, 98); // bP (w, cs)
+selectCodeEditor("COMP.v", 463, 649); // bP (w, cs)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (g, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUL (MUL.v)]", 4, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUL (MUL.v)]", 4, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("MUL.v", 11, 379); // bP (w, cs)
+selectCodeEditor("MUL.v", 72, 522); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (g, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX2x1 (MUX2x1.v)]", 5, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX2x1 (MUX2x1.v)]", 5, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("MUX2x1.v", 40, 357); // bP (w, cs)
+selectCodeEditor("MUX2x1.v", 503, 612); // bP (w, cs)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (g, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, REG (REG.v)]", 6, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, REG (REG.v)]", 6, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SHL (SHL.v)]", 7, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SHL (SHL.v)]", 7, false, false, false, false, false, true); // B (F, cs) - Double Click
+// [GUI Memory]: 144 MB (+2628kb) [00:05:57]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SHR (SHR.v)]", 8, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SHR (SHR.v)]", 8, false, false, false, false, false, true); // B (F, cs) - Double Click
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SUB (SUB.v)]", 9, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SUB (SUB.v)]", 9, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectButton(RDIResource.FilterToolBar_SHOW_ALL, "Show All"); // a (g, cs)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages,  Scanning sources.... ]", 2); // ah (J, cs)
+// Elapsed time: 90 seconds
+selectCodeEditor("SUB.v", 213, 705); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ADD.v", 1); // m (l, cs)
