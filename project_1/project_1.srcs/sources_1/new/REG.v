@@ -1,35 +1,16 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 09/14/2020 07:04:59 PM
-// Design Name: 
-// Module Name: REG
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
-module REG(d, q, clk, rst, DATAWIDTH);
-    input DATAWIDTH;
-    parameter DW = DATAWIDTH;
-    input [DW-1:0] d;
-    output reg [DW-1:0] q;
+module REG #(parameter WIDTH = 2) (I, Q, clk, rst);
+    input [WIDTH-1:0] I;
     input clk, rst;
+    output reg [WIDTH-1:0] Q;
+    
     
     always @(posedge clk) begin
         if(rst == 1) //synchronous reset
-            q <= (DW-1);
+            Q <= {WIDTH{1'b0}};
         else
-            q <= d;
+            Q <= I;
     end
+
 endmodule
