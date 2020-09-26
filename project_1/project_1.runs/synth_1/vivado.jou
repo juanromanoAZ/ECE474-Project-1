@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Sep 26 16:08:27 2020
+# Process ID: 3972
+# Current directory: C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log SUB.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SUB.tcl
+# Log file: C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.runs/synth_1/SUB.vds
+# Journal file: C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source SUB.tcl -notrace
