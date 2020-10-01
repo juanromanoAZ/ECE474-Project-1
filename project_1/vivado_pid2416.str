@@ -1,0 +1,1156 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 2416
+License: Customer
+
+Current time: 	Wed Sep 30 11:51:51 MST 2020
+Time zone: 	Mountain Standard Time (America/Phoenix)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 2560x1440
+Screen resolution (DPI): 100
+Available screens: 3
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	E:/Vivado/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	E:/Vivado/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Gaming PC
+User home directory: C:/Users/Gaming PC
+User working directory: C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: E:/Vivado/Vivado
+HDI_APPROOT: E:/Vivado/Vivado/2020.1
+RDI_DATADIR: E:/Vivado/Vivado/2020.1/data
+RDI_BINDIR: E:/Vivado/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/Gaming PC/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/Gaming PC/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/Gaming PC/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	E:/Vivado/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/vivado.log
+Vivado journal file location: 	C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/vivado.jou
+Engine tmp dir: 	C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/.Xil/Vivado-2416-DESKTOP-MFS4CR1
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/Vivado/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: E:/Vivado/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: E:/Vivado/Vivado/2020.1
+XILINX_VIVADO: E:/Vivado/Vivado/2020.1
+XILINX_VIVADO_HLS: E:/Vivado/Vivado/2020.1
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 998 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Gaming PC\Documents\GitHub\ECE474-Project-1\project_1\project_1.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 78 MB (+79094kb) [00:00:10]
+// [Engine Memory]: 998 MB (+895269kb) [00:00:10]
+// [GUI Memory]: 95 MB (+13721kb) [00:00:11]
+// [GUI Memory]: 117 MB (+18594kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  2796 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2020.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 75 MB. Current time: 9/30/20, 11:51:51 AM MST
+// Project name: project_1; location: C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1; part: xc7a100tcsg324-3
+dismissDialog("Open Project"); // bz (cs)
+// [GUI Memory]: 130 MB (+7389kb) [00:00:14]
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 147 MB (+11125kb) [00:04:23]
+// Elapsed time: 933 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADD (ADD.v)]", 2, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SUB (SUB.v)]", 1, false); // B (F, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 80 MB. Current time: 9/30/20, 12:21:55 PM MST
+// Elapsed time: 1296 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (F, cs) - Popup Trigger - Node
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cs)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cs)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 66 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "circuit_1"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 73 seconds
+dismissDialog("Add Sources"); // c (cs)
+// Tcl Message: close [ open {C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/circuit_1.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/circuit_1.v}} 
+// I (cs): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (v, C)
+dismissDialog("Define Module"); // I (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, circuit_1 (circuit_1.v)]", 9, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, circuit_1 (circuit_1.v)]", 9, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, circuit_1 (circuit_1.v)]", 9, false, false, false, false, false, true); // B (F, cs) - Double Click
+// Elapsed time: 20 seconds
+selectCodeEditor("circuit_1.v", 29, 417); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 342, 742); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 27, 421); // bP (w, cs)
+// Elapsed time: 93 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADD (ADD.v)]", 2, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SUB (SUB.v)]", 1, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SUB (SUB.v)]", 1, false, false, false, false, false, true); // B (F, cs) - Double Click
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SUB.v", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+selectCodeEditor("circuit_1.v", 119, 388); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 547, 611); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 254, 392); // bP (w, cs)
+// Elapsed time: 48 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SUB.v", 2); // m (l, cs)
+selectCodeEditor("SUB.v", 27, 60); // bP (w, cs)
+selectCodeEditor("SUB.v", 166, 76, false, false, false, true, false); // bP (w, cs) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+selectCodeEditor("circuit_1.v", 31, 417); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_1.v", 'v'); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 340, 548); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 124, 422); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 113, 421); // bP (w, cs)
+// Elapsed time: 21 seconds
+selectCodeEditor("circuit_1.v", 898, 584); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 230, 420); // bP (w, cs)
+// Elapsed time: 143 seconds
+selectCodeEditor("circuit_1.v", 71, 431); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_1.v", 'c'); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 126, 498); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_1.v", 'v'); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 148, 505); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 576, 743); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 227, 492); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 209, 506); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 687, 712); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 242, 536); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 30, 503); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_1.v", 'c'); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_1.v", 'v'); // bP (w, cs)
+// Elapsed time: 24 seconds
+selectCodeEditor("circuit_1.v", 269, 520); // bP (w, cs)
+// Elapsed time: 23 seconds
+selectCodeEditor("circuit_1.v", 1471, 632); // bP (w, cs)
+// Elapsed time: 642 seconds
+selectCodeEditor("circuit_1.v", 78, 544); // bP (w, cs)
+// Elapsed time: 123 seconds
+selectCodeEditor("circuit_1.v", 91, 554); // bP (w, cs)
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADD (ADD.v)]", 2, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADD (ADD.v)]", 2, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+selectCodeEditor("circuit_1.v", 88, 554); // bP (w, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 76 MB. Current time: 9/30/20, 12:51:56 PM MST
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ADD.v", 3); // m (l, cs)
+// Elapsed time: 10 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+selectCodeEditor("circuit_1.v", 283, 648); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 194, 555); // bP (w, cs)
+// Elapsed time: 16 seconds
+selectCodeEditor("circuit_1.v", 685, 859); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SUB.v", 2); // m (l, cs)
+selectCodeEditor("SUB.v", 185, 416); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+selectCodeEditor("circuit_1.v", 43, 559); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 501, 721); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 108, 576); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_1.v", 'v'); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 239, 795); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 1, 588); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 1, 604); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 3, 621); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 1, 642); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 0, 659); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 550, 846); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("circuit_1.v", 42, 563); // bP (w, cs)
+// Elapsed time: 22 seconds
+selectCodeEditor("circuit_1.v", 548, 830); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 141, 569); // bP (w, cs)
+// Elapsed time: 87 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADD (ADD.v)]", 2, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADD (ADD.v)]", 2, false, false, false, false, false, true); // B (F, cs) - Double Click
+// Elapsed time: 59 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+selectCodeEditor("circuit_1.v", 341, 813); // bP (w, cs)
+// Elapsed time: 1332 seconds
+selectCodeEditor("circuit_1.v", 464, 674); // bP (w, cs)
+// Elapsed time: 32 seconds
+selectCodeEditor("circuit_1.v", 49, 557); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 302, 767); // bP (w, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 74 MB. Current time: 9/30/20, 1:21:56 PM MST
+// Elapsed time: 458 seconds
+selectCodeEditor("circuit_1.v", 793, 647); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ADD.v", 3); // m (l, cs)
+// Elapsed time: 249 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SUB.v", 2); // m (l, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, COMP (COMP.v)]", 3, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, COMP (COMP.v)]", 3, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUL (MUL.v)]", 4, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUL (MUL.v)]", 4, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX2x1 (MUX2x1.v)]", 5, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX2x1 (MUX2x1.v)]", 5, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, REG (REG.v)]", 6, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, REG (REG.v)]", 6, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SHL (SHL.v)]", 7, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SHL (SHL.v)]", 7, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SHR (SHR.v)]", 8, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SHR (SHR.v)]", 8, false, false, false, false, false, true); // B (F, cs) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 77 MB. Current time: 9/30/20, 1:52:00 PM MST
+// Elapsed time: 1572 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SUB.v", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ADD.v", 3); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SUB.v", 2); // m (l, cs)
+selectCodeEditor("ADD.v", 369, 44); // bP (w, cs)
+selectCodeEditor("ADD.v", 379, 118); // bP (w, cs)
+selectCodeEditor("ADD.v", 371, 47); // bP (w, cs)
+selectCodeEditor("ADD.v", 514, 518); // bP (w, cs)
+selectCodeEditor("ADD.v", 166, 91); // bP (w, cs)
+selectCodeEditor("ADD.v", 248, 111); // bP (w, cs)
+// Elapsed time: 20 seconds
+selectCodeEditor("ADD.v", 345, 470); // bP (w, cs)
+// Elapsed time: 74 seconds
+selectCodeEditor("ADD.v", 56, 126); // bP (w, cs)
+selectCodeEditor("ADD.v", 325, 321); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("ADD.v", 55, 127); // bP (w, cs)
+// Elapsed time: 14 seconds
+selectCodeEditor("ADD.v", 626, 300); // bP (w, cs)
+selectCodeEditor("ADD.v", 173, 178); // bP (w, cs)
+selectCodeEditor("ADD.v", 431, 377); // bP (w, cs)
+selectCodeEditor("ADD.v", 155, 107); // bP (w, cs)
+selectCodeEditor("ADD.v", 367, 404); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ADD.v", 489, 584); // bP (w, cs)
+// Elapsed time: 36 seconds
+selectCodeEditor("ADD.v", 461, 412); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+selectCodeEditor("circuit_1.v", 472, 373); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 516, 821); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 223, 793); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 128, 657); // bP (w, cs)
+selectCodeEditor("SUB.v", 478, 514); // bP (w, cs)
+// PAResourceOtoP.PAViews_CODE: Code: close view
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectCodeEditor("circuit_1.v", 675, 673); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("circuit_1.v", 29, 552); // bP (w, cs)
+// Elapsed time: 62 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ADD.v", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+// Elapsed time: 42 seconds
+selectCodeEditor("circuit_1.v", 779, 817); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, circuit_1 (circuit_1.v)]", 1); // B (F, cs)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, circuit_1 (circuit_1.v)]", 1); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, circuit_1 (circuit_1.v)]", 1); // B (F, cs)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, circuit_1 (circuit_1.v)]", 1); // B (F, cs)
+selectCodeEditor("SHR.v", 481, 487); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+selectCodeEditor("circuit_1.v", 281, 558); // bP (w, cs)
+// Elapsed time: 15 seconds
+selectCodeEditor("circuit_1.v", 30, 556); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_1.v", 'c'); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 109, 572); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_1.v", 'v'); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 196, 574); // bP (w, cs)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHR.v", 8); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHL.v", 7); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHR.v", 8); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+// Elapsed time: 54 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHR.v", 8); // m (l, cs)
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+// Elapsed time: 39 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "COMP.v", 3); // m (l, cs)
+// Elapsed time: 125 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+selectCodeEditor("circuit_1.v", 283, 809); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 122, 633); // bP (w, cs)
+// Elapsed time: 60 seconds
+selectCodeEditor("circuit_1.v", 148, 588); // bP (w, cs)
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX2x1 (MUX2x1.v)]", 5, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX2x1 (MUX2x1.v)]", 5, false, false, false, false, false, true); // B (F, cs) - Double Click
+// Elapsed time: 177 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+selectCodeEditor("circuit_1.v", 48, 632); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 215, 602); // bP (w, cs)
+// Elapsed time: 123 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUL.v", 4); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 77 MB. Current time: 9/30/20, 2:22:00 PM MST
+// Elapsed time: 475 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SUB (SUB.v)]", 2, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SUB (SUB.v)]", 2, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SUB.v", 8); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+// Elapsed time: 58 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "REG.v", 5); // m (l, cs)
+// Elapsed time: 36 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 77 MB. Current time: 9/30/20, 2:52:00 PM MST
+// Elapsed time: 1692 seconds
+selectCodeEditor("circuit_1.v", 251, 661); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 241, 386); // bP (w, cs)
+// Elapsed time: 135 seconds
+selectCodeEditor("circuit_1.v", 28, 668); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 291, 823); // bP (w, cs)
+// Elapsed time: 93 seconds
+selectCodeEditor("circuit_1.v", 121, 384); // bP (w, cs)
+// Elapsed time: 28 seconds
+selectCodeEditor("circuit_1.v", 322, 512); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 41, 674); // bP (w, cs)
+// Elapsed time: 171 seconds
+selectCodeEditor("circuit_1.v", 396, 813); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 248, 620); // bP (w, cs)
+// Elapsed time: 50 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX2x1.v", 4); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+// Elapsed time: 97 seconds
+selectCodeEditor("circuit_1.v", 274, 798); // bP (w, cs)
+// Elapsed time: 18 seconds
+selectCodeEditor("circuit_1.v", 210, 829); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, circuit_1 (circuit_1.v)]", 1, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, circuit_1 (circuit_1.v)]", 1, true, false, false, false, true, false); // B (F, cs) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top circuit_1 [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("circuit_1.v", 48, 627); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ADD.v", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "COMP.v", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHL.v", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHR.v", 2); // m (l, cs)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, circuit_1 (circuit_1.v)]", 1); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (F, cs) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+dismissDialog("Add Sources"); // c (cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (F, cs) - Popup Trigger - Node
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "circuit_2"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 22 seconds
+dismissDialog("Add Sources"); // c (cs)
+// Tcl Message: close [ open {C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/circuit_2.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/circuit_2.v}} 
+// I (cs): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (v, C)
+dismissDialog("Define Module"); // I (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (F, cs) - Popup Trigger - Node
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cs)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cs)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cs)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "circuit_3"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 12 seconds
+dismissDialog("Add Sources"); // c (cs)
+// Tcl Message: close [ open {C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/circuit_3.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/circuit_3.v}} 
+// I (cs): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (v, C)
+dismissDialog("Define Module"); // I (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (F, cs) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "circuit_4"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 13 seconds
+dismissDialog("Add Sources"); // c (cs)
+// Tcl Message: close [ open {C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/circuit_4.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/circuit_4.v}} 
+// I (cs): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (v, C)
+dismissDialog("Define Module"); // I (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (F, cs) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 10 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "circuit_5"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 19 seconds
+dismissDialog("Add Sources"); // c (cs)
+// Tcl Message: close [ open {C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/circuit_5.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/circuit_5.v}} 
+// I (cs): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (v, C)
+dismissDialog("Define Module"); // I (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (F, cs) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+// Elapsed time: 24 seconds
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "circuit_6"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 30 seconds
+dismissDialog("Add Sources"); // c (cs)
+// Tcl Message: close [ open {C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/circuit_6.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/circuit_6.v}} 
+// I (cs): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (v, C)
+dismissDialog("Define Module"); // I (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 234 seconds
+selectCodeEditor("circuit_1.v", 55, 607); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectCodeEditor("circuit_1.v", 260, 784); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 147 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, circuit_2 (circuit_2.v)]", 4, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, circuit_2 (circuit_2.v)]", 4, false, false, false, false, false, true); // B (F, cs) - Double Click
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_2.v", 2); // m (l, cs)
+selectCodeEditor("circuit_2.v", 29, 420); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+// Elapsed time: 12 seconds
+selectCodeEditor("circuit_1.v", 118, 384); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 265, 380, false, false, false, true, false); // bP (w, cs) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_2.v", 2); // m (l, cs)
+typeControlKey((HResource) null, "circuit_2.v", 'v'); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 508, 640); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 437, 378); // bP (w, cs)
+// Elapsed time: 33 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+selectCodeEditor("circuit_1.v", 570, 655); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 27, 451); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 167, 480, false, false, false, true, false); // bP (w, cs) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_2.v", 2); // m (l, cs)
+selectCodeEditor("circuit_2.v", 74, 420); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_2.v", 'v'); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 406, 642); // bP (w, cs)
+// Elapsed time: 23 seconds
+selectCodeEditor("circuit_2.v", 223, 450); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+selectCodeEditor("circuit_1.v", 660, 831); // bP (w, cs)
+// Elapsed time: 130 seconds
+selectCodeEditor("circuit_1.v", 29, 521); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_1.v", 'c'); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_2.v", 2); // m (l, cs)
+selectCodeEditor("circuit_2.v", 56, 463); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_2.v", 'v'); // bP (w, cs)
+// Elapsed time: 68 seconds
+selectCodeEditor("circuit_2.v", 513, 667); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 217, 493); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+selectCodeEditor("circuit_1.v", 27, 398); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 106, 397, false, false, false, true, false); // bP (w, cs) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_2.v", 2); // m (l, cs)
+selectCodeEditor("circuit_2.v", 201, 407); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_2.v", 'v'); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 335, 832); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 43, 518); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+selectCodeEditor("circuit_1.v", 372, 833); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_2.v", 2); // m (l, cs)
+// Elapsed time: 45 seconds
+selectCodeEditor("circuit_2.v", 419, 854); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 315, 536); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 26, 536); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_2.v", 'c'); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 52, 559); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_2.v", 'v'); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 192, 559); // bP (w, cs)
+// Elapsed time: 48 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "COMP.v", 5); // m (l, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 78 MB. Current time: 9/30/20, 3:22:01 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 78 MB. Current time: 9/30/20, 3:52:01 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 77 MB. Current time: 9/30/20, 4:22:01 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 77 MB. Current time: 9/30/20, 4:52:02 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 77 MB. Current time: 9/30/20, 5:22:02 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 78 MB. Current time: 9/30/20, 5:52:02 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 77 MB. Current time: 9/30/20, 6:22:03 PM MST
+// Elapsed time: 11890 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+// Elapsed time: 37 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHL.v", 6); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHR.v", 7); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "COMP.v", 5); // m (l, cs)
+selectCodeEditor("circuit_1.v", 27, 599); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 33 seconds
+selectCodeEditor("circuit_1.v", 202, 785); // bP (w, cs)
+selectCodeEditor("COMP.v", 522, 595); // bP (w, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 78 MB. Current time: 9/30/20, 6:52:03 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 78 MB. Current time: 9/30/20, 7:22:03 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 77 MB. Current time: 9/30/20, 7:52:04 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 77 MB. Current time: 9/30/20, 8:22:04 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 77 MB. Current time: 9/30/20, 8:52:04 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 77 MB. Current time: 9/30/20, 9:22:04 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 77 MB. Current time: 9/30/20, 9:52:05 PM MST
+// Elapsed time: 12401 seconds
+selectCodeEditor("circuit_1.v", 351, 773); // bP (w, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 78 MB. Current time: 9/30/20, 10:22:05 PM MST
+// Elapsed time: 2189 seconds
+selectCodeEditor("COMP.v", 522, 705); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 445, 788); // bP (w, cs)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_2.v", 2); // m (l, cs)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+// Elapsed time: 170 seconds
+selectCodeEditor("COMP.v", 207, 473); // bP (w, cs)
+// Elapsed time: 256 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_2.v", 2); // m (l, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 77 MB. Current time: 9/30/20, 10:52:05 PM MST
+// Elapsed time: 159 seconds
+selectCodeEditor("circuit_2.v", 173, 622); // bP (w, cs)
+// Elapsed time: 59 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX2x1.v", 3); // m (l, cs)
+selectCodeEditor("circuit_2.v", 239, 618); // bP (w, cs)
+// Elapsed time: 262 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHL.v", 6); // m (l, cs)
+// Elapsed time: 25 seconds
+selectCodeEditor("circuit_2.v", 212, 661); // bP (w, cs)
+// Elapsed time: 84 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "REG.v", 2); // m (l, cs)
+selectCodeEditor("circuit_2.v", 83, 689); // bP (w, cs)
+// Elapsed time: 77 seconds
+selectCodeEditor("circuit_2.v", 384, 843); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("circuit_2.v", 58, 650); // bP (w, cs)
+// Elapsed time: 16 seconds
+selectCodeEditor("circuit_2.v", 623, 719); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, circuit_3 (circuit_3.v)]", 3, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, circuit_3 (circuit_3.v)]", 3, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, circuit_3 (circuit_3.v)]", 3, false, false, false, false, false, true); // B (F, cs) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("circuit_3.v", 26, 421); // bP (w, cs)
+// Elapsed time: 46 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_2.v", 2); // m (l, cs)
+selectCodeEditor("circuit_2.v", 32, 404); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 353, 487); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+selectCodeEditor("circuit_1.v", 30, 399); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 110, 420, false, false, false, true, false); // bP (w, cs) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_3.v", 3); // m (l, cs)
+selectCodeEditor("circuit_3.v", 52, 401); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_3.v", 'v'); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+selectCodeEditor("circuit_1.v", 495, 643); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 27, 452); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 156, 473, false, false, false, true, false); // bP (w, cs) - Popup Trigger
+selectCodeEditor("circuit_1.v", 690, 732); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 615, 651); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 26, 454); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 132, 463, false, false, false, true, false); // bP (w, cs) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, cs)
+selectCodeEditor("circuit_1.v", 648, 725); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_3.v", 3); // m (l, cs)
+selectCodeEditor("circuit_3.v", 55, 467); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_3.v", 'v'); // bP (w, cs)
+// Elapsed time: 13 seconds
+selectCodeEditor("circuit_3.v", 118, 384); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_3.v", 'c'); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 151, 470); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 401, 623); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 351, 735); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 145, 471); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_3.v", 'v'); // bP (w, cs)
+// Elapsed time: 58 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_2.v", 2); // m (l, cs)
+selectCodeEditor("circuit_2.v", 473, 818); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 28, 485); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_2.v", 'c'); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_3.v", 3); // m (l, cs)
+selectCodeEditor("circuit_3.v", 30, 536); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_3.v", 'v'); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 144, 538); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_3.v", 'v'); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 547, 706); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 91, 545); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 90, 539); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 465, 797); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 569, 535); // bP (w, cs)
+// Elapsed time: 17 seconds
+selectCodeEditor("circuit_3.v", 172, 442); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("circuit_3.v", 60, 553); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 96, 532); // bP (w, cs)
+// Elapsed time: 33 seconds
+selectCodeEditor("circuit_3.v", 263, 569); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_3.v", 'c'); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 223, 672); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 118, 573); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 330, 675); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 298, 563); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_3.v", 'v'); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 287, 588); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_3.v", 'c'); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 307, 591); // bP (w, cs)
+// Elapsed time: 14 seconds
+selectCodeEditor("circuit_3.v", 322, 696); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 195, 584); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 271, 649); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 289, 589); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_3.v", 'c'); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 299, 590); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_3.v", 'v'); // bP (w, cs)
+// Elapsed time: 13 seconds
+typeControlKey((HResource) null, "circuit_3.v", 'v'); // bP (w, cs)
+// Elapsed time: 19 seconds
+typeControlKey((HResource) null, "circuit_3.v", 'v'); // bP (w, cs)
+// Elapsed time: 468 seconds
+selectCodeEditor("circuit_3.v", 190, 721); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 148, 543); // bP (w, cs)
+// Elapsed time: 46 seconds
+selectCodeEditor("circuit_3.v", 588, 725); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 507, 874); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("circuit_3.v", 140, 536); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_3.v", 'v'); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 579, 752); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 384, 766); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 338, 633); // bP (w, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 78 MB. Current time: 9/30/20, 11:22:06 PM MST
+// Elapsed time: 286 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHR.v", 7); // m (l, cs)
+selectCodeEditor("circuit_3.v", 234, 690); // bP (w, cs)
+// Elapsed time: 26 seconds
+selectCodeEditor("circuit_3.v", 26, 690); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_3.v", 'c'); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_3.v", 'v'); // bP (w, cs)
+// Elapsed time: 34 seconds
+typeControlKey((HResource) null, "circuit_3.v", 'v'); // bP (w, cs)
+// Elapsed time: 83 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "REG.v", 2); // m (l, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("circuit_3.v", 252, 733); // bP (w, cs)
+// Elapsed time: 35 seconds
+selectCodeEditor("circuit_3.v", 522, 832); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 78 MB. Current time: 9/30/20, 11:52:06 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 79 MB. Current time: 10/1/20, 9:57:03 AM MST
+// WARNING: HEventQueue.dispatchEvent() is taking  1938 ms.
+// [GUI Memory]: 161 MB (+6678kb) [22:07:44]
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 78 MB. Current time: 10/1/20, 10:27:03 AM MST
+// WARNING: HEventQueue.dispatchEvent() is taking  1254 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 78 MB. Current time: 10/1/20, 10:57:03 AM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 78 MB. Current time: 10/1/20, 11:27:04 AM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 79 MB. Current time: 10/1/20, 11:57:04 AM MST
+// Elapsed time: 46448 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 78 MB. Current time: 10/1/20, 12:27:04 PM MST
+// Elapsed time: 587 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, circuit_6 (circuit_6.v)]", 6, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, circuit_6 (circuit_6.v)]", 6, false, false, false, false, true, false); // B (F, cs) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cs)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cs)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cs)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cs): Remove Sources: addNotify
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // g (Q, aE): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cs)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/circuit_6.v}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/circuit_6.v}} 
+// Tcl Message: file delete -force {C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/circuit_6.v} 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, circuit_5 (circuit_5.v)]", 5, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, circuit_5 (circuit_5.v)]", 5, false, false, false, false, true, false); // B (F, cs) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cs)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cs)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cs): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cs)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/circuit_5.v}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/circuit_5.v}} 
+// Tcl Message: file delete -force {C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/circuit_5.v} 
+// Elapsed time: 198 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, circuit_4 (circuit_4.v)]", 4, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, circuit_4 (circuit_4.v)]", 4, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+selectCodeEditor("circuit_1.v", 171, 436); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 594, 532); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 116, 449); // bP (w, cs)
+// Elapsed time: 28 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 10 seconds
+selectCodeEditor("circuit_1.v", 390, 883); // bP (w, cs)
+// Elapsed time: 17 seconds
+selectCodeEditor("circuit_1.v", 190, 543); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 133, 524); // bP (w, cs)
+// Elapsed time: 32 seconds
+selectCodeEditor("circuit_1.v", 461, 582); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 370, 791); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 167, 571); // bP (w, cs)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "COMP.v", 5); // m (l, cs)
+selectCodeEditor("circuit_1.v", 248, 590); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("circuit_1.v", 251, 591); // bP (w, cs)
+// Elapsed time: 28 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("circuit_1.v", 634, 765); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 283, 606); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("circuit_1.v", 555, 818); // bP (w, cs)
+// Elapsed time: 255 seconds
+selectCodeEditor("circuit_1.v", 551, 852); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX2x1.v", 3); // m (l, cs)
+// Elapsed time: 45 seconds
+selectCodeEditor("circuit_1.v", 196, 806); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 168, 605); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 470, 821); // bP (w, cs)
+// Elapsed time: 31 seconds
+selectCodeEditor("circuit_1.v", 597, 832); // bP (w, cs)
+// Elapsed time: 51 seconds
+selectCodeEditor("circuit_1.v", 447, 566); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ADD.v", 4); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX2x1.v", 3); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ADD.v", 4); // m (l, cs)
+selectCodeEditor("circuit_1.v", 378, 605); // bP (w, cs)
+// Elapsed time: 342 seconds
+selectCodeEditor("circuit_1.v", 403, 793); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 362, 600); // bP (w, cs)
+// Elapsed time: 61 seconds
+selectCodeEditor("circuit_1.v", 356, 612); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 362, 598); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "COMP.v", 5); // m (l, cs)
+// Elapsed time: 21 seconds
+selectCodeEditor("circuit_1.v", 354, 625); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX2x1.v", 3); // m (l, cs)
+// Elapsed time: 25 seconds
+selectCodeEditor("circuit_1.v", 314, 648); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 315, 636); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 328, 626); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 169, 624); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 406, 789); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 194, 430); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 408, 794); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 269, 784); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 167, 604); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 586, 794); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 326, 603); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUL.v", 0); // m (l, cs)
+selectCodeEditor("circuit_1.v", 446, 715); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 374, 619); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 168, 623); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 265, 781); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SUB.v", 1); // m (l, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("circuit_1.v", 168, 641); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "REG.v", 2); // m (l, cs)
+selectCodeEditor("circuit_1.v", 234, 638); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("circuit_1.v", 432, 820); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 446, 653); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 166, 639); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 525, 755); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_2.v", 2); // m (l, cs)
+// Elapsed time: 42 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+// Elapsed time: 22 seconds
+selectCodeEditor("circuit_1.v", 152, 571); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 499, 820); // bP (w, cs)
+// Elapsed time: 57 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHL.v", 6); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHR.v", 7); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHL.v", 6); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHR.v", 7); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHL.v", 6); // m (l, cs)
+selectCodeEditor("circuit_1.v", 437, 817); // bP (w, cs)
+selectCodeEditor("circuit_1.v", 532, 474); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_2.v", 2); // m (l, cs)
+selectCodeEditor("circuit_2.v", 502, 640); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 357, 537); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 108, 432); // bP (w, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 93 MB. Current time: 10/1/20, 12:57:05 PM MST
+// Elapsed time: 901 seconds
+selectCodeEditor("SHL.v", 289, 665); // bP (w, cs)
+// Elapsed time: 314 seconds
+selectCodeEditor("circuit_2.v", 418, 767); // bP (w, cs)
+// Elapsed time: 36 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_2.v", 2); // m (l, cs)
+selectCodeEditor("circuit_2.v", 297, 535); // bP (w, cs)
+// Elapsed time: 209 seconds
+selectCodeEditor("circuit_2.v", 377, 862); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 68, 502); // bP (w, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 93 MB. Current time: 10/1/20, 1:27:05 PM MST
+// Elapsed time: 1008 seconds
+selectCodeEditor("circuit_2.v", 439, 831); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 458, 668); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("circuit_2.v", 408, 744); // bP (w, cs)
+// Elapsed time: 183 seconds
+selectCodeEditor("SHL.v", 410, 661); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 132, 506); // bP (w, cs)
+// Elapsed time: 128 seconds
+selectCodeEditor("circuit_2.v", 411, 642); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 445, 580); // bP (w, cs)
+// Elapsed time: 14 seconds
+selectCodeEditor("circuit_2.v", 390, 593); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "COMP.v", 5); // m (l, cs)
+selectCodeEditor("circuit_2.v", 265, 589); // bP (w, cs)
+// Elapsed time: 52 seconds
+selectCodeEditor("circuit_2.v", 224, 500); // bP (w, cs)
+// Elapsed time: 21 seconds
+selectCodeEditor("circuit_2.v", 517, 759); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 281, 584); // bP (w, cs)
+// Elapsed time: 68 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 56 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHL.v", 6); // m (l, cs)
+selectCodeEditor("circuit_2.v", 243, 655); // bP (w, cs)
+// Elapsed time: 16 seconds
+selectCodeEditor("circuit_2.v", 158, 657); // bP (w, cs)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHR.v", 7); // m (l, cs)
+selectCodeEditor("circuit_2.v", 391, 782); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "REG.v", 2); // m (l, cs)
+selectCodeEditor("circuit_2.v", 522, 836); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 161, 689); // bP (w, cs)
+// Elapsed time: 47 seconds
+selectCodeEditor("circuit_2.v", 730, 840); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 205, 390); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 324, 422); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 202, 400); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 327, 865); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 629, 540); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("circuit_2.v", 412, 881); // bP (w, cs)
+// Elapsed time: 13 seconds
+selectCodeEditor("circuit_2.v", 135, 849); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_3.v", 3); // m (l, cs)
+selectCodeEditor("circuit_3.v", 644, 666); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 350, 855); // bP (w, cs)
+// Elapsed time: 73 seconds
+selectCodeEditor("circuit_3.v", 332, 888); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 117, 466); // bP (w, cs)
+// Elapsed time: 243 seconds
+selectCodeEditor("circuit_3.v", 278, 803); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 265, 572); // bP (w, cs)
+// Elapsed time: 66 seconds
+selectCodeEditor("REG.v", 327, 768); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 471, 843); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 234, 571); // bP (w, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 998 MB. GUI used memory: 93 MB. Current time: 10/1/20, 1:57:05 PM MST
+// Elapsed time: 119 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHR.v", 7); // m (l, cs)
+selectCodeEditor("circuit_3.v", 208, 692); // bP (w, cs)
+// Elapsed time: 44 seconds
+selectCodeEditor("circuit_3.v", 421, 774); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 32 seconds
+selectCodeEditor("circuit_3.v", 496, 822); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_4.v", 4); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_3.v", 3); // m (l, cs)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_4.v", 4); // m (l, cs)
+// Elapsed time: 98 seconds
+selectCodeEditor("circuit_4.v", 363, 598); // bP (w, cs)
+selectCodeEditor("circuit_4.v", 30, 414); // bP (w, cs)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_3.v", 3); // m (l, cs)
+// Elapsed time: 13 seconds
+selectCodeEditor("circuit_3.v", 177, 449); // bP (w, cs)
+selectCodeEditor("circuit_3.v", 424, 627); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("circuit_3.v", 529, 818); // bP (w, cs)
+// Elapsed time: 16 seconds
+selectCodeEditor("circuit_3.v", 120, 380); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_3.v", 'c'); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_4.v", 4); // m (l, cs)
+selectCodeEditor("circuit_4.v", 117, 386); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_4.v", 'v'); // bP (w, cs)
+selectCodeEditor("circuit_4.v", 306, 614); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectCodeEditor("circuit_4.v", 183, 389); // bP (w, cs)
+// Elapsed time: 21 seconds
+selectCodeEditor("circuit_4.v", 470, 642); // bP (w, cs)
+selectCodeEditor("circuit_4.v", 305, 377); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_3.v", 3); // m (l, cs)
+selectCodeEditor("circuit_3.v", 27, 417); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_3.v", 'c'); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_4.v", 4); // m (l, cs)
+selectCodeEditor("circuit_4.v", 169, 399); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_4.v", 'v'); // bP (w, cs)
+selectCodeEditor("circuit_4.v", 134, 403); // bP (w, cs)
+selectCodeEditor("circuit_4.v", 133, 586); // bP (w, cs)
+selectCodeEditor("circuit_4.v", 190, 421); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_3.v", 3); // m (l, cs)
+selectCodeEditor("circuit_3.v", 29, 456); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_3.v", 'c'); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_4.v", 4); // m (l, cs)
+selectCodeEditor("circuit_4.v", 216, 424); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_4.v", 'v'); // bP (w, cs)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_3.v", 3); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_4.v", 4); // m (l, cs)
+// Elapsed time: 120 seconds
+selectCodeEditor("circuit_4.v", 501, 633); // bP (w, cs)
+selectCodeEditor("circuit_4.v", 45, 461); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_3.v", 3); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_2.v", 2); // m (l, cs)
+selectCodeEditor("circuit_2.v", 29, 512); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 221, 551, false, false, false, true, false); // bP (w, cs) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, cs)
+selectCodeEditor("circuit_2.v", 470, 799); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_4.v", 4); // m (l, cs)
+typeControlKey((HResource) null, "circuit_4.v", 'v'); // bP (w, cs)
+selectCodeEditor("circuit_4.v", 222, 649); // bP (w, cs)
+selectCodeEditor("circuit_4.v", 153, 470); // bP (w, cs)
+// Elapsed time: 31 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_2.v", 2); // m (l, cs)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_1.v", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_2.v", 2); // m (l, cs)
+selectCodeEditor("circuit_2.v", 30, 517); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_2.v", 'c'); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 549, 462); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_4.v", 4); // m (l, cs)
+selectCodeEditor("circuit_4.v", 300, 498); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_4.v", 'v'); // bP (w, cs)
+selectCodeEditor("circuit_4.v", 386, 803); // bP (w, cs)
+selectCodeEditor("circuit_4.v", 154, 471); // bP (w, cs)
+// Elapsed time: 41 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_2.v", 2); // m (l, cs)
+selectCodeEditor("circuit_2.v", 472, 549); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 321, 487); // bP (w, cs)
+selectCodeEditor("circuit_2.v", 74, 476, false, false, false, true, false); // bP (w, cs) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "circuit_4.v", 4); // m (l, cs)
+selectCodeEditor("circuit_4.v", 140, 466); // bP (w, cs)
+typeControlKey((HResource) null, "circuit_4.v", 'v'); // bP (w, cs)
+selectCodeEditor("circuit_4.v", 619, 709); // bP (w, cs)
+selectCodeEditor("circuit_4.v", 291, 850); // bP (w, cs)
+selectCodeEditor("circuit_4.v", 243, 469); // bP (w, cs)
+// Elapsed time: 62 seconds
+selectCodeEditor("circuit_4.v", 386, 742); // bP (w, cs)
+selectCodeEditor("circuit_4.v", 81, 472); // bP (w, cs)
+// Elapsed time: 15 seconds
+selectCodeEditor("circuit_4.v", 346, 537); // bP (w, cs)
+// Elapsed time: 174 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "REG.v", 2); // m (l, cs)
+selectCodeEditor("circuit_4.v", 219, 720); // bP (w, cs)
+// Elapsed time: 34 seconds
+selectCodeEditor("circuit_4.v", 581, 764); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("circuit_4.v", 159, 721); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("REG.v", 487, 527); // bP (w, cs)
+selectCodeEditor("circuit_4.v", 424, 751); // bP (w, cs)
+selectCodeEditor("circuit_4.v", 283, 867); // bP (w, cs)
