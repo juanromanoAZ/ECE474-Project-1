@@ -9,7 +9,8 @@
    Speed Grade: tcsg324-3
 
 4.) Description:
-	To calculate estimated critical path we broke the 
-	circuits into cycles. We then grabbed the highest 
-	value from each of the cycles and added them together 
-	to get the critical path.
+	To calculate the estimated path, we followed each 
+	path and added the latency of each circuit element 
+	we came across. We then compared each of the paths 
+	and chose the longest one.
+
