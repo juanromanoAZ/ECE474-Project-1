@@ -23,7 +23,7 @@
 module circuit_2(clk, rst, a, b, c, z, x);
     input clk, rst;
     input [31:0] a, b, c;
-    output reg [31:0] z, x;
+    output [31:0] z, x;
     
     wire [31:0] d, e, f, g, h, zwire, xwire;
     wire dLTe, dEQe, u0a, u0b, u1a, u1b;

@@ -23,8 +23,8 @@
 module circuit_1(clk, rst, a, b, c, z, x);
     input clk, rst;
     input [7:0] a, b, c;
-    output reg [7:0] z;
-    output reg [15:0] x;
+    output [7:0] z;
+    output [15:0] x;
     
     wire [7:0] d, e, uEQ, uLT;
     wire [15:0] f, g, xwire;

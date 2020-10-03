@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.runs/synth_1/SUB.tcl"
+  variable script "C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.runs/synth_1/circuit_4.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-3
 
@@ -84,7 +86,16 @@ set_property ip_output_repo {c:/Users/Gaming PC/Documents/GitHub/ECE474-Project-
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib {{C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/SUB.v}}
+read_verilog -library xil_defaultlib {
+  {C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/ADD.v}
+  {C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/COMP.v}
+  {C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/MUX2x1.v}
+  {C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/REG.v}
+  {C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/SHL.v}
+  {C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/SHR.v}
+  {C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/SUB.v}
+  {C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.srcs/sources_1/new/circuit_4.v}
+}
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -101,17 +112,17 @@ set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top SUB -part xc7a100tcsg324-3
+synth_design -top circuit_4 -part xc7a100tcsg324-3
 OPTRACE "synth_design" END { }
 
 
 OPTRACE "write_checkpoint" START { CHECKPOINT }
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef SUB.dcp
+write_checkpoint -force -noxdef circuit_4.dcp
 OPTRACE "write_checkpoint" END { }
 OPTRACE "synth reports" START { REPORT }
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file SUB_utilization_synth.rpt -pb SUB_utilization_synth.pb"
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file circuit_4_utilization_synth.rpt -pb circuit_4_utilization_synth.pb"
 OPTRACE "synth reports" END { }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

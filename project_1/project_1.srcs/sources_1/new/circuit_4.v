@@ -23,11 +23,11 @@
 module circuit_4(a, b, c, z, x, clk, rst);
     input clk, rst;
     input [63:0] a, b, c;
-    output reg [31:0] z, x;
+    output [31:0] z, x;
     
     wire [63:0] d, e, f, g, h, xrin, zrin;
     wire dLTe, dEQe, u0a, u0b, u1a, u1b;
-    reg [63:0] greg, hreg;
+    wire [63:0] greg, hreg;
     
     ADD    #(.WIDTH(64)) add0(a, b, d);
     ADD    #(.WIDTH(64)) add1(a, c, e);

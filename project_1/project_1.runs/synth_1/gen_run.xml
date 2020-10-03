@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1601161705">
-  <File Type="PA-TCL" Name="SUB.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="SUB_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="SUB_reports.tcl"/>
-  <File Type="RDS-RDS" Name="SUB.vds"/>
-  <File Type="RDS-UTIL" Name="SUB_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="SUB_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="SUB.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="SUB_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="SUB_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1601694273">
+  <File Type="PA-TCL" Name="circuit_4.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="circuit_4_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="circuit_4_reports.tcl"/>
+  <File Type="RDS-RDS" Name="circuit_4.vds"/>
+  <File Type="RDS-UTIL" Name="circuit_4_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="circuit_4_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="circuit_4.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="circuit_4_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="circuit_4_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/SUB.v">
+    <File Path="$PSRCDIR/sources_1/new/ADD.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/COMP.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MUX2x1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/REG.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SHL.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -20,29 +48,26 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/SHR.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/SHL.v">
+    <File Path="$PSRCDIR/sources_1/new/SUB.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/REG.v">
+    <File Path="$PSRCDIR/sources_1/new/circuit_4.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/MUX2x1.v">
+    <File Path="$PSRCDIR/sources_1/new/circuit_3.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -58,7 +83,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/COMP.v">
+    <File Path="$PSRCDIR/sources_1/new/circuit_1.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -66,7 +91,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/ADD.v">
+    <File Path="$PSRCDIR/sources_1/new/circuit_2.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -76,7 +101,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="SUB"/>
+      <Option Name="TopModule" Val="circuit_4"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
