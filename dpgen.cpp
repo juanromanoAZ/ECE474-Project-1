@@ -62,6 +62,9 @@ void readLine(string line){
 
 
 int main(){
+
+
+    
     ifstream netlistFile;
     ofstream verilogFile;
 
