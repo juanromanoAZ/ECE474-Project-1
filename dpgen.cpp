@@ -469,8 +469,6 @@ string Generate_Verilog_String(string VerFileName, vector<vector<string>>IN, vec
                 VerilogStr += CompType + "#(.DATAWIDTH(" + BitWidth + ")) " + lowCompType + to_string(Num_Components_Used[CompType]) + "(" + InA_ParamStr + ", " + InB_ParamStr + ", " + OutParamStr + ");\n";
                 
                 Num_Components_Used[(CompType == "SCOMP") ? "SCOMP" : "COMP" ]++;
-                
-
             }
             else
             {
