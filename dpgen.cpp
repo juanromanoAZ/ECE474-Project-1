@@ -519,7 +519,7 @@ bool Group_Check(vector<string> v1, vector<string> v2, vector<string> v3, vector
     return ( (Single_Check(v1, tempStr) || Single_Check(v2, tempStr) || Single_Check(v3, tempStr) || Single_Check(v4, tempStr)) == false) ? false : true;
 }
 
-unordered_map<string, string> GenSizeType(vector<vector<string>>IN, vector<vector<string>>OUT, vector<vector<string>>WIRE, vector<vector<string>>REG){
+unordered_map<string, string> GenSizeType(vector<vector<string> >IN, vector<vector<string> >OUT, vector<vector<string> >WIRE, vector<vector<string> >REG){
     // Creating a temporary Map or Matrix {{"a", "UInt8"}, {"b", "UInt16"}, ....}
     unordered_map<string, string> Temporary_Map;
      
