@@ -15,9 +15,9 @@ void readLine(string line);
 
 bool Single_Check(vector<string> val1, string val2);
 bool Group_Check(vector<string> v1, vector<string> v2, vector<string> v3, vector<string> v4, string tempStr);
-bool vect_OutputChecker(vector<vector<string>> vec, string name);
-string Generate_Verilog_String(string VerFileName, vector<vector<string>>IN, vector<vector<string>>OUT, vector<vector<string>>WIRE, vector<vector<string>>REG, vector<vector<string>>OPL, vector<string> InVar, vector<string>OutVar);
-unordered_map<string, string> GenSizeType(vector<vector<string>>IN, vector<vector<string>>OUT, vector<vector<string>>WIRE, vector<vector<string>>REG);
+bool vect_OutputChecker(vector<vector<string> > vec, string name);
+string Generate_Verilog_String(string VerFileName, vector<vector<string> >IN, vector<vector<string>>OUT, vector<vector<string>>WIRE, vector<vector<string> >REG, vector<vector<string>>OPL, vector<string> InVar, vector<string>OutVar);
+unordered_map<string, string> GenSizeType(vector<vector<string> >IN, vector<vector<string> >OUT, vector<vector<string> >WIRE, vector<vector<string>>REG);
 string GenBitWidth(string Token);
 string GenInParamStr(int compBitWidth, int InBitWidth, string InVar, string Token);
 //-----------------------------------------------------
@@ -208,7 +208,7 @@ int main(){
 
 
 
-string Generate_Verilog_String(string VerFileName, vector<vector<string>>IN, vector<vector<string>>OUT, vector<vector<string>>WIRE, vector<vector<string>>REG, vector<vector<string>>OPL, vector<string> InVar, vector<string>OutVar){
+string Generate_Verilog_String(string VerFileName, vector<vector<string> >IN, vector<vector<string> >OUT, vector<vector<string> >WIRE, vector<vector<string>>REG, vector<vector<string>>OPL, vector<string> InVar, vector<string>OutVar){
     
     
     #pragma region Start of Constructing Header for Verilog File
