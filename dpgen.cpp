@@ -6,38 +6,41 @@
 #include <vector>
 #include <unordered_map>
 #include <stdio.h>
-#include <bits/stdc++.h> 
 using namespace std;
 
 //--------------Function(s) Prototypes-----------------
 
 void readLine(string line);
 
-bool Single_Check(vector<string> val1, string val2);
-bool Group_Check(vector<string> v1, vector<string> v2, vector<string> v3, vector<string> v4, string tempStr);
+bool Single_Check(vector <string> val1, string val2);
+bool Group_Check(vector <string> v1, vector <string> v2, vector <string> v3, vector <string> v4, string tempStr);
 bool vect_OutputChecker(vector<vector<string> > vec, string name);
-string Generate_Verilog_String(string VerFileName, vector<vector<string> >IN, vector<vector<string>>OUT, vector<vector<string>>WIRE, vector<vector<string> >REG, vector<vector<string>>OPL, vector<string> InVar, vector<string>OutVar);
-unordered_map<string, string> GenSizeType(vector<vector<string> >IN, vector<vector<string> >OUT, vector<vector<string> >WIRE, vector<vector<string>>REG);
+string Generate_Verilog_String(string VerFileName, vector < vector <string> > IN, vector < vector <string> >OUT, vector < vector<string> >WIRE, vector < vector <string> >REG, vector < vector <string> >OPL, vector <string> InVar, vector <string>OutVar);
+unordered_map <string, string> GenSizeType(vector< vector <string> > IN, vector < vector <string> > OUT, vector < vector <string> >WIRE, vector < vector <string>>REG);
 string GenBitWidth(string Token);
 string GenInParamStr(int compBitWidth, int InBitWidth, string InVar, string Token);
 //-----------------------------------------------------
 
 
+int main(/*int argc, char* argv[]*/) {
 
-int main(){
+    string netlistFile = "mixedcircuit1.txt";
+    string verilogFile = "Output.v";
 
-
-    string netlistFile = "474a_circuit1.txt"; //input file  (CHANGE THESE NAME)
-    string verilogFile = "output_file_TEST.v"; //output file (CHANGE THESE NAMES)
-
+    //argc = argument count
+    //argv is the command line argument list
+    // if (argc < 3 || argc > 3) {
+    //     cout << "Wrong number of arguments! Usage is as follows: dpgen netlistFile verilogFile" << endl;
+    //     return -1;
+    // }
 
     /*Long Term Storage Unallocated Vectors*/
-    vector<vector<string>> In_Lines, Out_Lines, Wire_Lines, Reg_Lines, Op_Lines;
-    vector<string> InVars, OutVars, WireVars, RegVars;
-    vector<string> Operations = {"=", "+", "-", "*", "==", "<<", ">>", "<", ">", "?", ":"}; //List of Valid Operations
+    vector < vector <string> > In_Lines, Out_Lines, Wire_Lines, Reg_Lines, Op_Lines;
+    vector <string> InVars, OutVars, WireVars, RegVars;
+    vector <string> Operations = {"=", "+", "-", "*", "==", "<<", ">>", "<", ">", "?", ":"}; //List of Valid Operations
 
     /*Short Term Storage for Manipulation*/
-    vector<string> tempVec;
+    vector <string> tempVec;
     string tempStr;
 
 
@@ -590,7 +593,7 @@ string GenInParamStr(int compBitWidth, int InBitWidth, string InVar, string Toke
     if (InBitWidth > compBitWidth) {
         
         //Ex: b[7:0]
-        ParamStr = InVar + "[" + to_string(compBitWidth - 1) + ":0]";
+        ParamStr = InVar + "[" + std::to_string(compBitWidth - 1) + ":0]";
     }
 
     //Check if its unsigned then it will receive zero padding to the Bit-Width, otherwise if its signed then extends Bit-Width
