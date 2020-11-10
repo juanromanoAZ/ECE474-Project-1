@@ -22,17 +22,15 @@ string GenInParamStr(int compBitWidth, int InBitWidth, string InVar, string Toke
 //-----------------------------------------------------
 
 
-int main(/*int argc, char* argv[]*/) {
+int main(int argc, char* argv[]) {
 
-    string netlistFile = "mixedcircuit1.txt";
-    string verilogFile = "Output.v";
-
-    //argc = argument count
-    //argv is the command line argument list
-    // if (argc < 3 || argc > 3) {
-    //     cout << "Wrong number of arguments! Usage is as follows: dpgen netlistFile verilogFile" << endl;
-    //     return -1;
-    // }
+    string netlistFile;
+    string verilogFile;
+    
+    if (argc < 3 || argc > 3) {
+        cout << "Wrong number of arguments! Usage is as follows: dpgen netlistFile verilogFile" << endl;
+        return -1;
+    }
 
     /*Long Term Storage Unallocated Vectors*/
     vector < vector <string> > In_Lines, Out_Lines, Wire_Lines, Reg_Lines, Op_Lines;
@@ -196,13 +194,10 @@ int main(/*int argc, char* argv[]*/) {
     string verilogContent = Generate_Verilog_String(verilogFile, In_Lines, Out_Lines, Wire_Lines, Reg_Lines, Op_Lines, InVars, OutVars);
     cout<< verilogContent << endl;
 
-
-
-    // vect_OutputChecker(In_Lines, "In_Lines");
-    // vect_OutputChecker(Out_Lines, "Out_Lines");
-    // vect_OutputChecker(Wire_Lines, "Wire_Lines");
-    // vect_OutputChecker(Reg_Lines, "Reg_Lines");
-    // vect_OutputChecker(Op_Lines, "Op_Lines");
+    ofstream outFileStream;
+    outFileStream.open(verilogFile);
+    outFileStream << verilogContent;
+    outFileStream.close();
 
     return 0;
 }   
