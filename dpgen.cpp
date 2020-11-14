@@ -136,14 +136,14 @@ int main(int argc, char* argv[]) {
             case 3:
                 //Validates Operators
                 if (!Single_Check(Operations, Op_Lines[i][1])){
-                        cout << "Error: An Unidentified Operation has been detected, Double check all operation are croectly shown" << endl;
+                        cout << "Error: An unidentified operation has been detected! Double check all operation are correctly shown." << endl;
                         return -1;
                 }
 
                 //Detects/Validates Variables
                 for (int x = 0; x < 3; x += 2){
                     if (!Group_Check(InVars, OutVars, WireVars, RegVars, Op_Lines[i][x])){
-                        cout << "Error: Missing Variable, Double check all your Inputs, Outputs, Wires, and Registers are present with correct spelling" << endl;
+                        cout << "Error: Missing variable! Double check all your Inputs, Outputs, Wires, and Registers are present with correct spelling." << endl;
                         return -1;
                     }
                 }
@@ -154,7 +154,7 @@ int main(int argc, char* argv[]) {
                 //Detects/Validates Variables
                 for (int x = 0; x < 6; x += 2){
                     if (!Group_Check(InVars, OutVars, WireVars, RegVars, Op_Lines[i][x])){
-                        cout << "Error: Missing Variable, Double check all your Inputs, Outputs, Wires, and Registers are present with correct spelling" << endl;
+                        cout << "Error: Missing variable! Double check all your Inputs, Outputs, Wires, and Registers are present with correct spelling." << endl;
                         return -1;
                     }
                 }
@@ -162,7 +162,7 @@ int main(int argc, char* argv[]) {
                 //Validates Operators
                 for (int y = 1; y < 4; y += 2){
                     if (!Single_Check(Operations, Op_Lines[i][y])){
-                        cout << "Error: An Unidentified Operation has been detected, Double check all operation are croectly shown" << endl;
+                        cout << "Error: An unidentified operation has been detected! Double check all operation are correctly shown." << endl;
                         return -1;
                     }
                 }
@@ -173,7 +173,7 @@ int main(int argc, char* argv[]) {
                 //Detects/Validates Variables
                 for (int x = 0; x < 8; x += 2){
                     if (!Group_Check(InVars, OutVars, WireVars, RegVars, Op_Lines[i][x])){
-                        cout << "Error: Missing Variable, Double check all your Inputs, Outputs, Wires, and Registers are present with correct spelling" << endl;
+                        cout << "Error: Missing variable! Double check all your Inputs, Outputs, Wires, and Registers are present with correct spelling." << endl;
                         return -1;
                     }
                 }
@@ -181,7 +181,7 @@ int main(int argc, char* argv[]) {
                 //Validates Operators
                 for (int y = 1; y < 6; y += 2){
                     if (!Single_Check(Operations, Op_Lines[i][y])){
-                        cout << "Error: An Unidentified Operation has been detected, Double check all operation are croectly shown" << endl;
+                        cout << "Error: An unidentified operation has been detected, Double check all operation are correctly shown" << endl;
                         return -1;
                     }
                 }
@@ -498,7 +498,7 @@ string Generate_Verilog_String(string VerFileName, vector<vector<string> >IN, ve
 
         else
         {
-            cout << "Error: Unkwoned";
+            cout << "Error: Unknown";
         }
         
     }
