@@ -26,11 +26,14 @@ int main(int argc, char* argv[]) {
 
     string netlistFile;
     string verilogFile;
-    
+
     if (argc < 3 || argc > 3) {
         cout << "Wrong number of arguments! Usage is as follows: dpgen netlistFile verilogFile" << endl;
         return -1;
     }
+
+    netlistFile = argv[1];
+    verilogFile = argv[2];
 
     /*Long Term Storage Unallocated Vectors*/
     vector < vector <string> > In_Lines, Out_Lines, Wire_Lines, Reg_Lines, Op_Lines;
