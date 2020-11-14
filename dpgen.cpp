@@ -195,7 +195,6 @@ int main(int argc, char* argv[]) {
     file.close();
 
     string verilogContent = Generate_Verilog_String(verilogFile, In_Lines, Out_Lines, Wire_Lines, Reg_Lines, Op_Lines, InVars, OutVars);
-    cout<< verilogContent << endl;
 
     ofstream outFileStream;
     outFileStream.open(verilogFile);
