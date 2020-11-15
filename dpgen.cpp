@@ -195,7 +195,7 @@ int main(int argc, char* argv[]) {
     file.close();
 
     string verilogContent = Generate_Verilog_String(verilogFile, In_Lines, Out_Lines, Wire_Lines, Reg_Lines, Op_Lines, InVars, OutVars);
-
+    
     ofstream outFileStream;
     outFileStream.open(verilogFile);
     outFileStream << verilogContent;
@@ -412,7 +412,7 @@ string Generate_Verilog_String(string VerFileName, vector<vector<string> >IN, ve
             string In_B_ParamStr = GenInParamStr(stoi(Out_BitWidth), stoi(B_BitWidth), InVB, In_B_Size_Type_Token);
 
             //Generate Verilog module instiation.
-            VerilogStr += "MUX2x1 #(.DATAWIDTH(" + Out_BitWidth + ") " + "mux" + to_string(Num_Components_Used["MUX2x1"]) + "(" + In_A_ParamStr + ", " + In_B_ParamStr + ", " + SelVar + ", " + OutV + ");\n";
+            VerilogStr += "MUX2x1 #(.DATAWIDTH(" + Out_BitWidth + ")) " + "mux" + to_string(Num_Components_Used["MUX2x1"]) + "(" + In_A_ParamStr + ", " + In_B_ParamStr + ", " + SelVar + ", " + OutV + ");\n";
             
             //Increments the number of used for module MUX2x1.
             Num_Components_Used["MUX2x1"]++;
@@ -444,15 +444,15 @@ string Generate_Verilog_String(string VerFileName, vector<vector<string> >IN, ve
 
                 if (Op_Symbol == ">")
                 {
-                    OutParamStr = ".gt(" + Out + "), 0, 0";
+                    OutParamStr = Out + ", 0, 0";
                 }
                 else if (Op_Symbol == "<")
                 {
-                    OutParamStr = "0, .lt(" + Out + "), 0";
+                    OutParamStr = "0," + Out + ", 0";
                 }
                 else
                 {
-                    OutParamStr = "0, 0, .eq(" + Out + ")";
+                    OutParamStr = "0, 0, " + Out;
                 }
                 
                 if (In_A_Size_Type_Token[0] == 'I' || In_B_Size_Type_Token[0] == 'I')
