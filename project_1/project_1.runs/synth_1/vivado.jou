@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Fri Oct  2 20:04:35 2020
-# Process ID: 21628
+# Start of session at: Sun Nov 15 10:53:04 2020
+# Process ID: 16708
 # Current directory: C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log circuit_4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source circuit_4.tcl
 # Log file: C:/Users/Gaming PC/Documents/GitHub/ECE474-Project-1/project_1/project_1.runs/synth_1/circuit_4.vds

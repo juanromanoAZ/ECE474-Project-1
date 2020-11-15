@@ -195,7 +195,7 @@ int main(int argc, char* argv[]) {
     file.close();
 
     string verilogContent = Generate_Verilog_String(verilogFile, In_Lines, Out_Lines, Wire_Lines, Reg_Lines, Op_Lines, InVars, OutVars);
-    
+
     ofstream outFileStream;
     outFileStream.open(verilogFile);
     outFileStream << verilogContent;
@@ -328,13 +328,20 @@ string Generate_Verilog_String(string VerFileName, vector<vector<string> >IN, ve
     /*Declaring Registers*/
     for (int i = 0; i < REG.size(); i++){
         
-        VerilogStr += REG[i][0];
+        VerilogStr += "register ";
+
+        //VerilogStr += REG[i][0];
         
         if (REG[i][1][0] == 'I'){
             VerilogStr += " signed ";
         }
 
-        for (int j = 0; j < REG[i].size(); j++){
+        size_t fnd = REG[i][1].find_last_of("t");
+        string TempBitwidth = REG[i][1].substr(fnd + 1);
+
+        VerilogStr += "[" + to_string(stoi(TempBitwidth) - 1) + ":0]";
+
+        for (int j = 2; j < REG[i].size(); j++){
             
             VerilogStr += REG[i][j];
             
