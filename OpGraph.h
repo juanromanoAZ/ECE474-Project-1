@@ -12,7 +12,6 @@ class OpNode
 {
 public:
     OpNode();
-    ~OpNode();
 
     string OprToken, outVars;
     vector<OpNode*> predecessors;
