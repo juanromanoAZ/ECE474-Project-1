@@ -69,7 +69,14 @@ void CmdArgChecker(int argc, char* argv[]){
 
 //Checks for Existence 
 bool exist(vector<string> outVars, string tempVar){
-    return (find(outVars.begin(), outVars.end(), tempVar) != outVars.end()) ? true : false;    
+	if (std::find(outVars.begin(), outVars.end(), tempVar) !=  outVars.end())
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 
 //parse through the file
@@ -186,7 +193,8 @@ void Parsing_Input_File(string File, unordered_map<string, unordered_map<string,
     varTypeSizeNameMap.insert({"output", inputVarsSizeMap});
     varTypeSizeNameMap.insert({"variable", inputVarsSizeMap});
 
-    for (int i = 0; i < oprLines.size(); i++)
+	//Checking Functionality
+    /*for (int i = 0; i < oprLines.size(); i++)
     {
         if (exist(inVars, oprLines[i][0]) == false)
         {
@@ -223,7 +231,7 @@ void Parsing_Input_File(string File, unordered_map<string, unordered_map<string,
                 std::exit(0);
             }    
         }
-    }
+    }*/
     theMap = varTypeSizeNameMap;
 }
 
