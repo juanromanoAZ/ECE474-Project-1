@@ -8,38 +8,46 @@
 
 using namespace std;
 
+
 class OpNode
 {
 public:
-    OpNode();
+	OpNode();
 
-    string OprToken, outVars;
-    vector<OpNode*> predecessors;
-    vector<OpNode*> successors;
-    vector<string> inVars;
-
-    int latency, slack, alapStartTime, listRStartTime;
-    bool isAlapScheduled, isListRScheduled;
+	string operatorToken;
+	vector<OpNode*> predecessors;
+	vector<OpNode*> successors;
+	vector<string> inputVars;
+	string outputVar;
+	int latency;
+	int slack;
+	bool isAlapScheduled;
+	int alapStartTime;
+	bool isListRScheduled;
+	int listRStartTime;
 };
 
+///////////////////////////////
 
 class OpGraph
 {
-private:
-    int latencyConst;
-    vector<OpNode*> OprNodes;
-    unordered_map<int, vector<OpNode>> startTimeNodeMap;
-
 public:
-    OpGraph(vector<vector<string>> oprs, int latency);
-    unordered_map<int, vector<OpNode>> getStartTimeNodeMap();
-    void scheduleOprs();
-    
-    vector<OpNode*> getOprNodes();
+	OpGraph(vector<vector<string>> ops, int latency); //Constructor.
 
-    void scheduledAlap();
-    unordered_map<int, vector<OpNode>> getAlapTimesNodeMap();
-    unordered_map<int, vector<OpNode>> getListRTimesNodeMap();
+	unordered_map<int, vector<OpNode>> getStartTimeToNodesMap();
+	void scheduleOperations();
+	vector<OpNode*> getOperationNodes();
+
+	// temp. move to private.
+	void scheduleAlap();
+	unordered_map<int, vector<OpNode>> getAlapTimesToNodesMap();
+	unordered_map<int, vector<OpNode>> getListRTimesToNodesMap();
+
+private:
+	int latencyConstraint;
+	vector<OpNode*> operationNodes;
+	unordered_map<int, vector<OpNode>> startTimeToNodesMap;
+
 };
 
 #endif
